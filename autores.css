@@ -115,7 +115,7 @@ a {
   object-position: center;
 }
 .t-slider-box-text {
-  padding: 0px; /*0em 2em*/
+  padding: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
