@@ -1,6 +1,7 @@
 <!--doctype html-->
 <html>
   <head>
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta
@@ -11,8 +12,7 @@
     <title>Livros Além das Páginas</title>
     <!--Stylesheet----------------------------------->
     <link rel="stylesheet" type="text/css" href="resenhas.css" />
-    <!--Light-Box-css-------------------------------->
-    <link rel="stylesheet" href="resenhas.css" />
+
     <!--fav-icon------------------------------------->
     <link rel="shortcut icon" href="assets/Reading glasses-cuate.svg" />
     <!--poppins-font-family-------------------------->
@@ -22,6 +22,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </script>
   </head>
   <body>
     <header>
@@ -41,17 +42,6 @@
         <span>Livros Além das Páginas</span>
         <h3>NOSSAS OBRAS PREFERIDAS</h3>
       </div>
-      <!--filter--------->
-      <ul class="portfolio-filter">
-        <li class="list portfolio-filter-active" data-filter="Todos">Todos</li>
-        <li class="list" data-filter="Poema">Poema</li>
-        <li class="list" data-filter="Romance">Romance</li>
-        <li class="list" data-filter="Ficção Científica">Ficção Científica</li>
-        <li class="list" data-filter="Aventura">Aventura</li>
-        <li class="list" data-filter="Fábula">Fábula</li>
-        <li class="list" data-filter="Fantasia">Fantasia</li>
-        <li class="list" data-filter="Conto">Conto</li>
-      </ul>
       <!--container--------->
       <div class="portfolio-container">
         <!--1------------>
@@ -253,100 +243,69 @@
         </div>
 
       </div>
-    </section>
-    <!--js---------------------------------->
-    <script src="js/JQuery.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script>
-      /*blog-filter-menu----------------------------*/
-      $(document).on("click", ".portfolio-filter li", function () {
-        $(this)
-          .addClass("portfolio-filter-active")
-          .siblings()
-          .removeClass("portfolio-filter-active")
-      })
-
-      /*portfolio-filter---------------------------------*/
-      $(document).ready(function () {
-        $(".list").click(function () {
-          const value = $(this).attr("data-filter")
-          if (value == "all") {
-            $(".portfolio-box").show("1000")
-          } else {
-            $(".portfolio-box")
-              .not("." + value)
-              .hide("1000")
-            $(".portfolio-box")
-              .filter("." + value)
-              .show("1000")
-          }
-        })
-      })
-    </script>
-                  <footer>
-                <div id="footer_content">
-                    <div id="footer_contacts">
-                        <h1>Livros além das Páginas</h1>
-                        <p>Participe de Aventuras Épicas</p>
+    </section>     
+    <footer>
+      <div id="footer_content">
+        <div id="footer_contacts">
+          <h1>Livros além das Páginas</h1>
+          <p>Participe de Aventuras Épicas</p>
+            
+          <div id="footer_social_media">
+            <a href="https://www.instagram.com/diasbeatriz283/" class="footer-link" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            
+            <a href="https://github.com/Beatriz-Jastro" class="footer-link" id="github">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            
+            <a href="https://discord.com/channels/1169595482058801213/1169595483963007029" class="footer-link" id="discord">
+              <i class="fa-brands fa-discord"></i>
+            </a>
+          </div>
+        </div>
+        <ul class="footer-list">
+          <li>
+            <h3>Créditos</h3>
+          </li>
+          <li>
+            <a href="https://storyset.com/home" class="footer-link">Story Set</a>
+          </li>
+          <li>
+            <a href="https://github.com/" class="footer-link">Git Hub</a>
+          </li>
+          <li>
+          <a href="https://uvv.br/" class="footer-link">UVV</a>
+          </li>
+        </ul>
+            
+        <ul class="footer-list">
+          <li>
+            <h3>Mapa do Blog</h3>
+          </li>
+          <li>
+            <a href="index.html" class="footer-link">Home</a>
+          </li>
+          <li>
+            <a href="autores.html" class="footer-link">Autores</a>
+          </li>
+          <li>
+            <a href="resenhas.html" class="footer-link">Resenhas</a>
+          </li>
+          <li>
+            <a href="recomendações.html" class="footer-link">Recomendações</a>
+          </li>
+          <li>
+            <a href="contato.html" class="footer-link">Contato</a>
+          </li>
         
-                        <div id="footer_social_media">
-                            <a href="https://www.instagram.com/diasbeatriz283/" class="footer-link" id="instagram">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-        
-                            <a href="https://github.com/Beatriz-Jastro" class="footer-link" id="github">
-                              <i class="fa-brands fa-github"></i>
-                            </a>
-        
-                            <a href="https://discord.com/channels/1169595482058801213/1169595483963007029" class="footer-link" id="discord">
-                              <i class="fa-brands fa-discord"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <ul class="footer-list">
-                        <li>
-                            <h3>Créditos</h3>
-                        </li>
-                        <li>
-                            <a href="https://storyset.com/home" class="footer-link">Story Set</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/" class="footer-link">Git Hub</a>
-                        </li>
-                        <li>
-                            <a href="https://uvv.br/" class="footer-link">UVV</a>
-                        </li>
-                    </ul>
-        
-                    <ul class="footer-list">
-                        <li>
-                            <h3>Mapa do Blog</h3>
-                        </li>
-                        <li>
-                            <a href="index.html" class="footer-link">Home</a>
-                        </li>
-                        <li>
-                            <a href="autores.html" class="footer-link">Autores</a>
-                        </li>
-                        <li>
-                            <a href="resenhas.html" class="footer-link">Resenhas</a>
-                        </li>
-                        <li>
-                          <a href="recomendações.html" class="footer-link">Recomendações</a>
-                      </li>
-                      <li>
-                        <a href="contato.html" class="footer-link">Contato</a>
-                    </li>
-    
-                    </ul>
-    
-                </div>
-        
-                <div id="footer_copyright">
-                    &#169
-                    2023 todos os direitos reservados
-                </div>
-            </footer>
+        </ul>
+      </div>
+            
+      <div id="footer_copyright">
+        &#169
+        2023 todos os direitos reservados
+      </div>
+    </footer>
   </body>
 </html>
