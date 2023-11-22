@@ -183,7 +183,6 @@ footer.text-introduction {
     padding: 3rem 2rem;
   }
 }
-/* Seções de texto "Sobre Nós" */
 .about-section {
 }
 
@@ -203,7 +202,6 @@ footer.text-introduction {
   text-align: center;
 }
 
-/* Adiciona um espaçamento entre as seções */
 .team-section {
   margin-top: 40px;
 }
